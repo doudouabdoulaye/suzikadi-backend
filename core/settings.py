@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-79xwcxz$mny6^4k$303t+c%x!*%+bnlmn$5mv^yl)jgnx!_ji^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['suzikadi-backend.onrender.com', 'localhost', '127.0.0.1', '*']
+
 
 
 # Application definition
