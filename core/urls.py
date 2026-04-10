@@ -24,6 +24,10 @@ urlpatterns = [
 
     path('', include('apps.partenaires.urls')),
     path('realisations/', include('apps.realisations.urls')),
+
+    # On ajoute 'api/' pour correspondre à ce que React attend
+    path('api/', include('apps.partenaires.urls')),
+    path('api/', include('apps.realisations.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
